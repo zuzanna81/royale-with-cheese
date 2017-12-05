@@ -1,5 +1,5 @@
 Given("I visit the landing page") do
-  visit 'landing/index'
+  visit root_path
 end
 
 Then("I should see {string}") do |text|
