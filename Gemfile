@@ -18,6 +18,9 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_bot_rails'
 end
 
 group :development do
