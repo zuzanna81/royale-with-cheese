@@ -25,6 +25,8 @@ Then("I should be logged in as {string}") do |email|
   login_as(user, scope: :user)
 end
 
-Then("I should see {string}") do |text|
-  expect(page).to have_content text
+def page_path_from(page_name)
+  case page_name.downcase
+    when 'landing' then root_path
+  end
 end
