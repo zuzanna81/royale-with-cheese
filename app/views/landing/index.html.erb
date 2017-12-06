@@ -5,3 +5,18 @@
   <%= text_field_tag :genre %>
   <%= submit_tag 'Search' %>
 <% end %>
+
+<% if @movies %>
+  <% if movies.results.any? %>
+    <h2> Results </h2>
+      <ul>
+        <% @movies.results.take(5).each do |movie| %>
+        <li>
+          <img src"http://image.tmdb.org/t/p/w185<%=movie.poster_path %>"alt="" >
+          <b> movie.title </b> <br>
+            <p> movie.overview </p>
+        </li>
+        <% end %>
+      </ul>
+  <% end %>
+<% end %>
