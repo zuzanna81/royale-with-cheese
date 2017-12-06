@@ -1,4 +1,4 @@
-When("I visit landing page") do
+When("I visit the landing page") do
   visit root_path
 end
 
@@ -6,8 +6,8 @@ Then("I should see {string}") do |text|
   expect(page).to have_content text
 end
 
-When("I fill in {string} with {string}")  do |search_field, content|
-  fill_in search_field, with: content
+When("I fill in {string} with {string}")  do |search_field, keyword|
+  fill_in search_field, with: keyword
 end
 
 When("I click on {string} button") do |button|
