@@ -1,9 +1,9 @@
-<h1>Landing#index</h1>
-<p>Royale with Cheese</p>
+<h1>Royale with Cheese</h1>
+<p>Movie suggestions</p>
 
 <%= form_tag(search_path) do %>
   <%= text_field_tag :genre %>
-  <%= submit_tag 'Search' %>
+  <%= submit_tag 'search' %>
 <% end %>
 
 <% if @movies %>

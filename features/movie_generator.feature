@@ -5,6 +5,6 @@ Feature: Movie generator
 
   Scenario:
     When I visit the landing page
-    And I fill in "text field" with "keyword"
-    And I click on "Search" button
+    And I fill in "genre" with "action"
+    And I click on "search" button
     Then I should see a list of "movies"
