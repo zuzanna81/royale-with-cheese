@@ -13,7 +13,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-
+gem 'awesome_print'
+gem 'themoviedb-api', '~> 1.2'
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'pry-rails'
