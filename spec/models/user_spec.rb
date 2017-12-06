@@ -13,4 +13,10 @@ RSpec.describe User, type: :model do
     it { is_expected.to validate_length_of :password }
     it { is_expected.to validate_confirmation_of :password }
   end
+
+  describe 'Factory' do
+    it 'should be valid' do
+      expect(FactoryBot.create(:user)).to be_valid
+    end
+  end
 end
