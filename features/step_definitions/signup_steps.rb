@@ -2,7 +2,6 @@ Given("the following user exists") do |table|
   table.hashes.each do |user|
     User.create(user)
   end
-  binding.pry
 end
 
 Given("I visit the {string} page") do |page_name|
