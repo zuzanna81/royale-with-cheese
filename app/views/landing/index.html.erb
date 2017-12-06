@@ -7,7 +7,7 @@
 <% end %>
 
 <% if @movies %>
-  <% if movies.results.any? %>
+  <% if @movies.results.any? %>
     <h2> Results </h2>
       <ul>
         <% @movies.results.take(5).each do |movie| %>
