@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.5'
 
 
 group :development, :test do
+  gem 'devise'
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'rspec-rails'
