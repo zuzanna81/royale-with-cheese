@@ -4,12 +4,11 @@ Feature: Visitor Sign Up
   I need to be able to write in my user details and register
 
   Background:
-    Given I visit the "Landing" page
-    When I click on the "Sign up" button or link
-    Then I should be redirected to the "Sign up" page
     Given the following user exists
       | email                  | password    | password_confirmation |
       | cutie123@hotmail.com   | hello123    | hello123              |
+    When I visit the "Landing" page
+    And I click on the "Sign up" button or link
 
   Scenario: Visitor fills in all fields correctly [Happy Path]
     When I fill in "Email" with "hotmale@hotmail.com"
