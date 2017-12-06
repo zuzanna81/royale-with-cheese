@@ -6,6 +6,11 @@ When("I click on the {string} button or link") do |element|
   click_link_or_button element
 end
 
+Then("I should have an account with email {string} saved in the database") do |email|
+  user = User.last
+  expect(user.email).to eq email
+end
+
 Then("I should be redirected to the {string} page") do |page_name|
   expect(page.current_path).to eq page_path_from(page_name)
 end
@@ -21,6 +26,6 @@ end
 def page_path_from(page_name)
   case page_name.downcase
     when 'landing' then root_path
-    when 'sign up' then
+    when 'sign up' then new_user_path
   end
 end

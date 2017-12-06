@@ -15,7 +15,8 @@ Feature: Visitor Sign Up
     And I fill in "Password" with "whatever"
     And I fill in "Password Confirmation" with "whatever"
     And I click on the "Create User" button or link
-    Then I should be redirected to the "Landing" page
+    Then I should have an account with email "hotmale@hotmail.com" saved in the database
+    And I should be redirected to the "Landing" page
     And I should see "Account has been successfully created."
 
 
