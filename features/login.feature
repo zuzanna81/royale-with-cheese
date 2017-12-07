@@ -5,13 +5,12 @@ Feature: Visitor Login
 
 
   Background:
-    Given I visit the "Landing" page
-    When I click "Login"
-    Then I should be redirected to the "Login" page
     Given the following user exists
-      | username | email                | password    | password_confirmation |
-      | Scott    | hotmale@hotmail.com  | cutie123    | cutie123              |
-
+       | email                | password    | password_confirmation |
+       | hotmale@hotmail.com  | cutie123    | cutie123              |
+    When I visit the "Landing" page
+    And I click on the "Login" button or link
+    Then I should be redirected to the "Login" page
 
   Scenario: Visitor fills in all fields [Happy Path]
     When I fill in "Email" with "hotmale@hotmail.com"

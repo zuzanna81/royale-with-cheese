@@ -13,10 +13,6 @@ Then("I should have an account with email {string} saved in the database") do |e
   expect(user.email).to eq email
 end
 
-Then("I should be redirected to the {string} page") do |page_name|
-  expect(page.current_path).to eq page_path_from(page_name)
-end
-
 When("I fill in {string} with {string}") do |field, value|
   fill_in field, with: value
 end
