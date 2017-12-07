@@ -16,7 +16,7 @@ Feature: Visitor Login
     And I fill in "Password" with "cutie123"
     And I click "Log in"
     Then I should be redirected to the "Landing" page
-    And I should be logged in as "hotmale@hotmail.com"
+    And I should see "Logged in as, hotmale@hotmail.com"
     And I should see "Signed in successfully."
 
 
