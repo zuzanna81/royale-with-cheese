@@ -2,6 +2,7 @@ require 'coveralls'
 Coveralls.wear_merged!('rails')
 
 require 'cucumber/rails'
+require 'webmock/cucumber'
 
 ActionController::Base.allow_rescue = false
 
@@ -12,4 +13,5 @@ rescue NameError
 end
 
 Cucumber::Rails::Database.javascript_strategy = :truncation
+
 World(FactoryBot::Syntax::Methods)
