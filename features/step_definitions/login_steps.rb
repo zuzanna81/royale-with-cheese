@@ -14,10 +14,3 @@ Then("I should be logged in as {string}") do |email|
   user = User.find_by(email: email)
   login_as(user, scope: :user)
 end
-
-def page_path_from(page_name)
-  case page_name.downcase
-    when 'landing' then root_path
-    when 'login' then new_user_session_path
-  end
-end
