@@ -10,3 +10,10 @@ Feature: Movie generator
     And I click on "search" button
     Then I should see "Thor: Ragnarok"
     And I should see "Sleight"
+
+  @tmdb
+  Scenario: User input wrong keywords
+    When I visit the landing page
+    And I fill in "genre" with "sadsadcomedy"
+    And I click on "search" button
+    Then I should see "wrong entry"
