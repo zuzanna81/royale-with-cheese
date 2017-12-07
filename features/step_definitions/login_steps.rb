@@ -12,5 +12,5 @@ end
 
 Then("I should be logged in as {string}") do |email|
   user = User.find_by(email: email)
-  login_as(user, scope: :user)
+  expect(user.sign_in_count).to eq 1
 end
