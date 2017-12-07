@@ -8,6 +8,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <% unless current_page?(new_user_registration_path) || current_page?(new_user_session_path)  %>
+    <%= render 'layouts/nav' %>
+    <% end %>
     <% if flash[:notice] %>
       <%= flash[:notice] %>
     <% end %>
