@@ -14,5 +14,6 @@ end
 def page_path_from(page_name)
   case page_name.downcase
     when 'landing' then root_path
+    when 'login' then new_user_session_path
   end
 end
