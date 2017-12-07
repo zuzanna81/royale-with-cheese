@@ -9,8 +9,3 @@ end
 Then("I should be redirected to the {string} page") do |page_name|
   expect(page.current_path).to eq page_path_from(page_name)
 end
-
-Then("I should be logged in as {string}") do |email|
-  user = User.find_by(email: email)
-  expect(user.sign_in_count).to eq 1
-end
