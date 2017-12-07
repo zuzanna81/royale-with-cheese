@@ -3,5 +3,26 @@
     <%= link_to 'Sign up', new_user_registration_path %>
   </li>
 </ul>
-<h1>Landing#index</h1>
-<p>Royale with Cheese</p>
+
+<h1>Royale with Cheese</h1>
+<p>Movie suggestions</p>
+
+<%= form_tag(search_path) do %>
+  <%= text_field_tag :genre %>
+  <%= submit_tag 'search' %>
+<% end %>
+
+<% if @movies %>
+  <% if @movies.results.any? %>
+    <h2> Results </h2>
+      <ul>
+        <% @movies.results.take(5).each do |movie| %>
+        <li>
+          <img src="http://image.tmdb.org/t/p/w185<%=movie.poster_path %>" alt="" >
+          <b> <%= movie.title %> </b> <br>
+            <p> <%= movie.overview %> </p>
+        </li>
+        <% end %>
+      </ul>
+  <% end %>
+<% end %>

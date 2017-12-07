@@ -14,7 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-
+gem 'themoviedb-api', '~> 1.2'
+gem 'dotenv-rails'
 
 group :development, :test do
   gem 'pry-rails'
@@ -26,6 +27,8 @@ group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   gem 'coveralls', require: false
+  gem 'webmock'
+  gem 'awesome_print'
 end
 
 group :development do
