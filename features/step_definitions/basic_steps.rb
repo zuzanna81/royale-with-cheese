@@ -6,10 +6,6 @@ Then("I should see {string}") do |text|
   expect(page).to have_content text
 end
 
-When("I fill in {string} with {string}")  do |search_field, keyword|
-  fill_in search_field, with: keyword
-end
-
 When("I click on {string} button") do |button|
   click_link_or_button button
 end
