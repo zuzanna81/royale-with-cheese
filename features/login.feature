@@ -17,6 +17,7 @@ Feature: Visitor Login
     And I click "Log in"
     Then I should be redirected to the "Landing" page
     And I should see "Logged in as, hotmale@hotmail.com"
+    And I should see "Logout"
     And I should see "Signed in successfully."
 
 
