@@ -18,8 +18,6 @@ Feature: Visitor Sign Up
     Then I should have an account with email "hotmale@hotmail.com" saved in the database
     And I should be redirected to the "Landing" page
     And I should see "Welcome! You have signed up successfully."
-    And I should see "Logout"
-    And I should see "Logged in as, hotmale@hotmail.com"
 
 
   Scenario: Visitor fills in all fields except Password [Sad Path]
