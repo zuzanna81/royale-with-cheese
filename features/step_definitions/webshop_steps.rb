@@ -1,7 +1,7 @@
 When("I am on the {string} page") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  visit webshop_show_path
 end
 
-Then("I should see {string} of {string}") do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
+Then("I should see {string} of {string}") do |title, name|
+  expect(page).to have_content title, name
 end
