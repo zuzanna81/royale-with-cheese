@@ -9,6 +9,6 @@ Feature: User can add products to cart
       | T-shirt | Blue t-shirt  | 50    |
       | Mug     | Nice mug      | 20    |
 
-  Scenario: Visitor sees a list of products on the webshop page
+  Scenario:
     When I visit the "Webshop" page
     And I click on "Add to cart" button or link
