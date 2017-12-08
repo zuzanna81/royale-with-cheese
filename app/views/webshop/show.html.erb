@@ -1,2 +1,4 @@
-<h1>Webshop#show</h1>
-<p>Find me in app/views/webshop/show.html.erb</p>
+<h1>Welcome to Webshop</h1>
+<% @products.each do |product| %>
+  <%= "#{product.title} - #{product.description} - #{product.price}" %>
+<% end %>
