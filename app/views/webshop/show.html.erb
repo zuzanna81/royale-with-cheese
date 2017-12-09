@@ -7,6 +7,6 @@
 <% @products.each do |product| %>
 <div id="product-<%= product.id %>">
   <%= "#{product.title} - #{product.description} - #{product.price}" %><br/>
-      <input type="submit" value="Add to cart">
+    <%= link_to 'Add to cart', shopping_cart_show_path(:product_id => product) %><br/>
 </div>
 <% end %>
