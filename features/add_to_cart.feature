@@ -12,6 +12,6 @@ Background:
   Scenario: User add a product to cart
     When I visit the "Webshop" page
     And I click "Add to cart" on "T-shirt"
-    Then there should be a cart created for me
-    And the cart should contain "T-shirt"
-    And I should see "T-shirt was added to your cart"
+    Then there should be an order created for me
+    And the order should contain "T-shirt"
+    And I should see "T-shirt was added to your order"

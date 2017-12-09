@@ -1,4 +1,7 @@
 <h1>Welcome to Webshop</h1>
 <% @products.each do |product| %>
-  <%= "#{product.title} - #{product.description} - #{product.price}" %>
+  <div id="product-<%= product.id %>">
+    <%= "#{product.title} - #{product.description} - #{product.price}" %>
+    <%= link_to "Add to cart" %> 
+  </div>
 <% end %>
