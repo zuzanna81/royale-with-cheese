@@ -12,6 +12,4 @@ Feature: User can add products to cart
   Scenario:
     When I visit the "Webshop" page
     And I click on "Add to cart" on "T-shirt"
-    Then I should be redirected to the "Shopping cart" page
-    And I should see "T-shirt"
-    And I should see "50.00"
+  
