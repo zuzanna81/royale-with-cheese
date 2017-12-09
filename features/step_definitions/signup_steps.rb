@@ -23,5 +23,6 @@ def page_path_from(page_name)
     when 'sign up' then new_user_registration_path
     when 'login' then new_user_session_path
     when 'webshop' then webshop_show_path
+    when 'shopping cart' then shopping_cart_show_path
   end
 end

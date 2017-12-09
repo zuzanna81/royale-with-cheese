@@ -1,5 +1,5 @@
 <h1>Welcome to Webshop</h1>
 <% @products.each do |product| %>
   <%= "#{product.title} - #{product.description} - #{product.price}" %><br/>
-  <%#= link_to 'Add to cart', shopping_cart_path(:product_id => product), :method => 'POST' %><br/>
+  <%= link_to 'Add to cart', shopping_cart_show_path(:product_id => product), :method => 'POST'%><br/>
 <% end %>
