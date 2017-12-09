@@ -12,4 +12,4 @@ Feature: User can add products to cart
   Scenario:
     When I visit the "Webshop" page
     And I click on "Add to cart" on "T-shirt"
-  
+    Then A cart should be created for me
