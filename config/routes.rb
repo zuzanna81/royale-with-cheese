@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  # get 'shopping_cart/show'
-
   get 'webshop/show'
 
   devise_for :users
