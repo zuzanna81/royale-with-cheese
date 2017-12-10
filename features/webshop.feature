@@ -4,7 +4,7 @@ Feature: User can access webshop page
   I would like to be able to visit the shop page
 
   Background:
-    Given the following product exist
+    Given the following products exist
       | title   | description   | price |
       | T-shirt | Blue t-shirt  | 50    |
       | Mug     | Nice mug      | 20    |

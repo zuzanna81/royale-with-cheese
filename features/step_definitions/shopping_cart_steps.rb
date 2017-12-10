@@ -5,9 +5,13 @@ When("I click on {string} on {string}") do |link, title|
     end
 end
 
-Then("A cart should be created for me") do
+Then("a cart should be created for me") do
   @cart = Cart.last
   expect(@cart).to_not be nil
+end
+
+Then("the cart should contain {string}") do |string|
+  expect(@cart.shopping_cart_items.first.item).to eq @product
 end
 
 

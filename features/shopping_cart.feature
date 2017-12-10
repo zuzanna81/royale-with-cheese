@@ -4,7 +4,7 @@ Feature: User can add products to cart
   I would like to be able to add products to my cart
 
   Background:
-    Given the following product exist
+    Given the following products exist
       | title   | description   | price |
       | T-shirt | Blue t-shirt  | 50    |
       | Mug     | Nice mug      | 20    |
@@ -12,4 +12,6 @@ Feature: User can add products to cart
   Scenario:
     When I visit the "Webshop" page
     And I click on "Add to cart" on "T-shirt"
-    Then A cart should be created for me
+    # Then show me the page
+    Then a cart should be created for me
+    And the cart should contain "T-shirt"
